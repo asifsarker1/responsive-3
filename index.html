@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <script src="https://kit.fontawesome.com/b13badcc0e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+NSW+ACT+Foundation&family=Inter&family=Lobster&family=Manrope&family=Montserrat&family=Poppins&family=Rubik+Distressed&family=Titillium+Web:ital@1&family=Ubuntu:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1{
+            font-family: 'DynaPuff', cursive;
+            font-size: 60px;
+            color: #ff5c1c;
+        }
+        header{
+            border: 3px solid orange;
+            border-radius: 15px;
+            background-color: #0000009a;
+            box-shadow: 0px 0px 15px 0px black;
+            margin-bottom: 5vw;
+            background-image: url(images/logo.png);
+        }
+        header p{
+            font-family: 'Ubuntu', sans-serif;
+            text-align: justify;
+            color: white;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            background-color: aquamarine;
+            border-radius: 20px;
+            width: 100%;
+
+        }
+        .container h2{
+            color: orange;
+            font-size: 30px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        .container p{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        .box img{
+            width: 80%;
+            position: relative;
+            left: 30px;
+            border-radius: 20px;
+        }
+        .box{
+            border: 2px solid orange;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: #000000b6;
+            box-shadow: 0px 0px 15px 0px orange;
+            transition: background-color 2s ease-in-out;
+        }
+        .box:hover{
+            background-color: black;
+        }
+        input{
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            box-shadow: 0px 0px 10px 0px aquamarine;
+            transition: box-shadow 3s ease-in-out, color 2s ease-in-out, background-color 1s ease-in-out;
+        }
+        input:hover{
+            background-color: orange;
+            color: black;
+            box-shadow: 0px 0px 10px white;
+
+        }
+        footer{
+            margin-top: 5%;
+            margin-left: 40%;
+            margin-right: 40%;
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            background-color: orange;
+            padding: 2px 4px;
+            border-radius: 60px;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .box img{
+                left: 40px;
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 900px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Factory</h1>
+        <p>Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant or store with frozen, preheated or precooked ingredients and served in packaging for take-out/take-away. Fast food was created as a commercial strategy to accommodate large numbers of busy commuters, travelers and wage workers. In 2018, the fast food industry was worth an estimated $570 billion globally.</p>
+    </header>
+    <section class="container">
+        <div class="box">
+            <img src="images/food-1.png" alt="">
+            <h2>Mix Food</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus neque repudiandae adipisci odio quo blanditiis expedita nemo vel facilis!</p>
+        </div>
+        <div class="box">
+            <img src="images/food-2.png" alt="">
+            <h2>Burger</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Consectetur eius officiis cum quas. Dolorum, aut, eum alias non provident cupiditate deleniti repudiandae, modi tempore minima repellendus corporis a.</p>
+        </div>
+        <div class="box">
+            <img src="images/food-3.png" alt="">
+            <h2>Chaomeen</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Quis earum dicta cumque quasi eius quae odit dolor deleniti accusantium deserunt eos, repudiandae illo culpa! Repellendus voluptatum voluptates optio.</p>
+        </div>
+        <div class="box">
+            <img src="images/food-4.png" alt="">
+            <h2>Desert</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Expedita esse voluptates sed minus quia consequuntur fugiat! Consectetur blanditiis suscipit illum dolores iure recusandae nihil fugit veniam necessitatibus? Consequuntur.</p>
+        </div>
+        <div class="box">
+            <img src="images/food-5.png" alt="">
+            <h2>Pasta</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Rem, magnam hic quos aliquid voluptate esse eius, itaque doloribus dolores illum quidem laboriosam at perferendis consectetur consequuntur eaque sint.</p>
+        </div>
+        <div class="box">
+            <img src="images/food-6.png" alt="">
+            <h2>Noodles</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Adipisci ab, error dolore obcaecati alias, maxime vel nisi natus, hic veritatis excepturi. Quod accusantium delectus voluptatem tempore, deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <img src="images/food-7.png" alt="">
+            <h2>Item-6</h2>
+            <input type="button" value="Ordder Now">
+            <p></p>
+            <p>Adipisci ab, error dolore obcaecati alias, maxime vel nisi natus, hic veritatis excepturi. Quod accusantium delectus voluptatem tempore, deserunt commodi!</p>
+        </div>
+        <div class="box">
+        <p>More pdates are comming soon</p>
+        </div>
+    </section>
+    <footer>copyright <i class="fa-solid fa-copyright"></i> 2022 </footer>
+</body>
+</html>
